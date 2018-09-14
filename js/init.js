@@ -7,27 +7,16 @@ $(function() {
   setTimeout(function() {
     $("#subTitle").hide();
    $("#starterLogoBackground").addClass("small");
-  }, 1000);
+ }, 500);
 
   setTimeout(function() {
+    $("#starterLogoBackground").addClass("fade");
+  }, 800);
+  setTimeout(function() {
     $("#starterLogoBackground").hide();
-  }, 1300);
+  },1100);
 });
 
-/*function mainLoader(){
-    $("#subTitle").hide(100);
-    $("#starterLogoContainer").animate({
-      top:"0",
-      left: "0",
-      margin:"0"
-    }, function(){
-    });
-    $("#starterLogo").animate({
-      width:"10%"
-    }, function(){
-        $("#starterLogoBackground").hide();
-    });
-}*/
 
 $(function(){
      $("footer").load("./footer/footer.html");
@@ -37,12 +26,12 @@ $(function(){
 $(function(){
      $("header").load("./menu/mainMenu.html");
    });
-   
+
 function atmeretezes(){
 
-      if (window.pageYOffset>10){  
+      if (window.pageYOffset>10){
         $('header').addClass("sticky");
-        $('logo').addClass("stick");  
+        $('logo').addClass("stick");
       }
       else{
         $('header').removeClass("sticky");
@@ -53,7 +42,7 @@ function atmeretezes(){
 
 function visszahozas(){
   $(document).ready(function(){
-    $(document).mousemove(function(event){  
+    $(document).mousemove(function(event){
       var pos=event.clientY;
       if(pos<92){
         $('header').removeClass("sticky");
@@ -65,3 +54,23 @@ function visszahozas(){
 window.addEventListener('scroll', atmeretezes);
 window.addEventListener('mousemove', visszahozas);
 
+function initMap() {
+    var center = {lat: 47.441490, lng: 19.041790}
+    var mapOptions = {
+        center: new google.maps.LatLng(center),
+        zoom: 16,
+        mapTypeId: 'roadmap'
+            }
+    var markerOptions={
+      position: center,
+      map:map
+    }
+
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    var marker = new google.maps.Marker({position: center, map:map})
+
+
+    //EZEK MIÉRT NEM MŰKÖDNEK?????
+    //var marker = new google.maps.Marker(markerOptions)
+    //var map = new google.maps.Map($('#map'), mapOptions);
+  }

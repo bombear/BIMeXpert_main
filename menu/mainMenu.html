@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <link rel="stylesheet" href="/menu/mainMenu.css">
+  <script type="text/javascript" src="js/menu.js"></script>
 </head>
 
     <body>
@@ -13,16 +14,44 @@
         <a href="/index.html">
           <img id="logo" src="/images/logo_ferde_k.png" alt="BIMeXpert LOGO">
         </a>
-        <div id="spacer"></div>
+        <div class="spacer"></div>
         <ul id="mainMenu">
-            <li> 
-              <img src="/images/raise-your-hand-to-ask.png" id="smallimage" alt=""/> 
-              <a onclick="">WTF is BIM !?</a> </li>
-            <li><img src="/images/home.png" id="smallimage" alt=""/>
-              <a href="/references.html" onclick="">Irodánk</a></li>
-            <li><img src="/images/gears.png" id="smallimage" alt=""/><a onclick="">Szolgáltatások</a></li>
-            <li><img src="/images/team.png" id="smallimage" alt=""/><a href="/team.html" onclick="">Csapatunk</a></li>
-            <li><img src="/images/phone.png" id="smallimage" alt=""/><a href="/contacts.html" onclick="">Kapcsolat</a></li>
+            <li>
+              <li><a href="BIM.html" onclick="">
+                    <img src="/images/raise-your-hand-to-ask.png" id="smallimage" alt=""/>
+                    Mi a BIM?
+                  </a>
+              </li>
+
+              <li><a href="/ourcompany.html" onclick="">
+                    <img src="/images/home.png" id="smallimage" alt=""/>
+                    referenciáink
+                  </a>
+              </li>
+
+            <li id=services><a href="/services.html" onclick="">
+                  <img src="/images/gears.png" id="smallimage" alt=""/>
+                  szolgáltatások
+                </a>
+                <ul class=dropdown>
+                  <li class=dropdownElement><a>Beruházóknak</a></li>
+                  <li class=dropdownElement><a>Tervezőknek</a></li>
+                  <li class=dropdownElement><a>Gyártóknak</a></li>
+                  <li class=dropdownElement><a>Munkavállalóknak</a></li>
+                </ul>
+            </li>
+            <li><a href="/team.html" onclick="">
+                  <img src="/images/team.png" id="smallimage" alt=""/>
+                  Csapatunk
+                </a>
+            </li>
+            <li><a href="/contacts.html" onclick="">
+                  <img src="/images/phone.png" id="smallimage" alt=""/>
+                  Kapcsolat
+                </a>
+            </li>
+
+        </li>
         </ul>
       </nav>
     </div>

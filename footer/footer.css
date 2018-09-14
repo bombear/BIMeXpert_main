@@ -1,59 +1,38 @@
 #footer{
   bottom: 0;
   position: fixed;
+  display: flex;
+  flex-direction: row;
   background-color: #6D6D6D;
-  height: 30px;
   border-radius: 4px 4px 0px 0px;
-  width: 80vw;  
+  width: 80vw;
   max-width: 1680px;
   min-width: 600px;
   box-shadow: 0 0px 6px 0px rgba(255, 235, 0, 0.66), 3px 3px 3px 3px rgba(0, 0, 0, 0.12);
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .infoText{
   font-family: 'Josefin';
   font-size: 14px;
   color: white;
-  margin-top: 8px;
-}
-.infoText2{
-  font-family: 'Josefin';
-  font-size: 14px;
-  color: white;
-  margin-top: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-#introduction{
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 0px;
-  padding-bottom: 10px;
-  /*background-color: white;*/
-  top: 0px;
-  font-family: 'Josefin';
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(19, 19, 19);
-  text-align: justify;
-  width: 65vw;
-  max-width: 1500px;
-  z-index: -1;
-}
 
 #email{
-  float: left;
   padding-left: 20px;
 }
 
 
 #phone{
-  float: left;
   padding-left: 20px;
 }
 
 #company{
-  float: right;
   padding-right: 20px;
   font-size: 14px;
 }

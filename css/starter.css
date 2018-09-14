@@ -1,0 +1,71 @@
+.startercontainer {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.starteritem {
+  flex-grow: 1;
+}
+
+.index-wrapper {
+  display: flex;
+  flex-flow: column;
+  height: 40vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(240,240,240);
+}
+.index-wrapper .index-menuu {
+  /*box-shadow: 0 0 2px 2px #d0d0d0;*/
+  z-index: 0;
+  background-color: rgba(240,240,240);
+  color: rgba(220,220,220);
+  padding: 0.5em;
+  height: 3vh;
+  align-items: center;
+}
+.index-wrapper .index-main {
+  display: flex;
+  background: white;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.index-wrapper .index-main .index-square {
+  flex-basis: 50%;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+}
+.index-wrapper .index-main .index-square .index-square-inner {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.index-wrapper .index-main .index-square .index-square-inner:hover {
+  transform: scale(1.1);
+}
+.index-wrapper .index-main .index-square .index-square-inner div {
+  /*flex: 1;*/
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#startertext{
+  font-family: 'Flamalight';
+  font-size: 24px;
+  color: rgb(19, 19, 19, 0.8);
+  text-align: justify;
+}
